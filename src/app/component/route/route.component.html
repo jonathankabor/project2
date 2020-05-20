@@ -1,13 +1,13 @@
 <main class="container-fluid">
     <header class="pt-5">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: greenyellow;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:green;">
             <a class="navbar-brand" href="#">Travel-agency</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Vol <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="/home">Vol <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="#">Hôtels</a>
                     <a class="nav-item nav-link active" href="#">Vol+Hôtel</a>
                     <a class="nav-item nav-link active" href="#">Autres</a>
@@ -16,6 +16,71 @@
         </nav>
         <hr />
     </header>
+    <fieldset>
+        <hr/>
+
+        <div class="form-group btn-toolbar">
+            <a href="/home" class="btn btn-primary btn-lg  mb-2 active" role="button" title="Aller-retour" style="background-color: green;">Aller-retour</a>
+
+            <a href="#" class="btn btn-primary  btn-lg mb-2 active" role="button" title="Aller simple" style="background-color: green;">Aller simple</a>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col">
+                    <input class="form-control" type="text" value="" placeholder="D'où partez-vous ?">
+                </div>
+                <div class="form-group col">
+                    <input class="form-control" type="text" value="" placeholder="Où allez-vous ?">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <input class="form-control" data-date-format="mm/dd/yyyy" placeholder="Départ le">
+                </div>
+                <div class="form-group col">
+                    <input class="form-control" data-date-format="mm/dd/yyyy" placeholder="Arrivée le">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Adulte(S) (+12 Ans)</option>
+                      <option>1 Adulte</option>
+                      <option>2 Adultes</option>
+                      <option>3 Adultes</option>
+                      <option>4 Adultes</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Enfant(S) (2-11 Ans)</option>
+                  <option>1 Enfant</option>
+                  <option>2 Enfants</option>
+                  <option>3 Enfants</option>
+                  <option>4 Enfants</option>
+                </select>
+                </div>
+                <div class="form-group col">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                <option>Bébé(S) (-2 Ans)</option>
+                <option>1 Bébé</option>
+                <option>2 Bébés</option>
+                <option>3 Bébés</option>
+                <option>4 bébés</option>
+              </select>
+                </div>
+            </div>
+            <div class="custom-control custom-checkbox form-group">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Vols directs</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2" style="background-color: green;">Rechercher des vols</button>
+
+        </form>
+
+    </fieldset>
 
     <router-outlet></router-outlet>
 

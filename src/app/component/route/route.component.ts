@@ -12,4 +12,6 @@ export class RouteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
 }
