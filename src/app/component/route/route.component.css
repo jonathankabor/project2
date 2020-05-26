@@ -2,3 +2,7 @@
     padding: 35px;
     margin: -50px;
 }
+
+.navbar-nav a:hover {
+    color: #FFFFFF;
+}
