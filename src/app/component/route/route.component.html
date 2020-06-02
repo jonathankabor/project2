@@ -7,92 +7,17 @@
       </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/home ">Vol <span class="sr-only ">(current)</span></a>
-                    <a class="nav-item nav-link active" routerLink="active" routerLinkActive="/hotel " href="/hotel">Hôtels</a>
+                    <a class="nav-item nav-link active" href="/vol ">Vol <span class="sr-only ">(current)</span></a>
+                    <a class="nav-item nav-link active" href="/hotel">Hôtels</a>
                     <a class="nav-item nav-link active " href="# ">Vol+Hôtel</a>
                     <a class="nav-item nav-link active " href="# ">Autres</a>
                 </div>
             </div>
         </nav>
-        <hr />
+      <hr >
     </header>
-    <fieldset class="fondecran ">
-        <hr/>
-        <div class="form-group btn-toolbar ">
-            <a href="/home " class="btn btn-primary btn-lg mb-2 active" role="button" title="Aller-retour" style="background-color: green; ">Aller-retour</a>
 
-            <a href="# " class="btn btn-primary btn-lg mb-2 active" role="button" title="Aller simple" style="background-color: green; ">Aller simple</a>
-        </div>
-
-        <form>
-            <div class="form-row">
-                <div class="form-group col ">
-                    <input class="form-control" type="text" value="" placeholder="D 'où partez-vous ?">
-                </div>
-                <div class="form-group col">
-                    <input class="form-control" type="text" value="" placeholder="Où allez-vous ?">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col">
-                    <input class="form-control" data-date-format="mm/dd/yyyy" placeholder="Départ le">
-                </div>
-                <div class="form-group col">
-                    <input class="form-control" data-date-format="mm/dd/yyyy" placeholder="Arrivée le">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                      <option>Adulte(S) (+12 Ans)</option>
-                      <option>1 Adulte</option>
-                      <option>2 Adultes</option>
-                      <option>3 Adultes</option>
-                      <option>4 Adultes</option>
-                    </select>
-                </div>
-                <div class="form-group col">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Enfant(S) (2-11 Ans)</option>
-                  <option>1 Enfant</option>
-                  <option>2 Enfants</option>
-                  <option>3 Enfants</option>
-                  <option>4 Enfants</option>
-                </select>
-                </div>
-                <div class="form-group col">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                <option>Bébé(S) (-2 Ans)</option>
-                <option>1 Bébé</option>
-                <option>2 Bébés</option>
-                <option>3 Bébés</option>
-                <option>4 bébés</option>
-              </select>
-                </div>
-            </div>
-            <div class="custom-control custom-checkbox form-group">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Vols directs</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary mb-2" style="background-color: green;">Rechercher des vols</button>
-
-        </form>
-        <h4>Les prinipales destinations</h4>
-
-        <hr/>
-
-        <div class="container-fluid text-center">
-            <a href=""><img src="assets/images/Angola.jpeg" alt="Angola" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/Brazil.jpeg" alt="Brazil" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/caraibes.jpeg" alt="caraibes" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/Londres.jpeg" alt="Londres" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/New-York.jpeg" alt="New-York" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/Shangai.jpeg" alt="Shangai" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/Hammamet.jpg" alt="Hammamet" class="img-thumbnail"></a>
-            <a href=""><img src="assets/images/Ibiza.jpg" alt="Ibiza" class="img-thumbnail"></a>
-        </div>
-    </fieldset>
+    <router-outlet></router-outlet>
     <footer>
         <hr />
         <p class="big text-center" style="color: green;">
@@ -100,3 +25,4 @@
         </p>
     </footer>
 </main>
+

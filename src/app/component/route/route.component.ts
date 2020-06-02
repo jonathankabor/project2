@@ -7,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RouteComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-    
+  constructor() {
   }
 
+  ngOnInit(): void {
 
+  }
 
 
 }

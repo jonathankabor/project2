@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { RouteComponent } from './component/route/route.component';
+
 import { HotelComponent } from './component/hotel/hotel.component';
+import {VolComponent} from './component/vol/vol.component';
 
 
 const routes: Routes = [
 
-   {path:'home',component: RouteComponent},
-   {path:'hotel', component: HotelComponent},
-
-   { path: '', redirectTo: '/home', pathMatch: 'prefix' }
+   {path: 'vol', component: VolComponent},
+   {path: 'hotel', component: HotelComponent},
+  {path: '', redirectTo: '/vol', pathMatch: 'full'}
 
 ];
 
