@@ -74,4 +74,31 @@
     <a href=""><img src="assets/images/Hammamet.jpg" alt="Hammamet" class="img-thumbnail"></a>
     <a href=""><img src="assets/images/Ibiza.jpg" alt="Ibiza" class="img-thumbnail"></a>
   </div>
+  <hr />
+  <article>
+    <div class="btn-group btn-group-sm my-3 col text-center">
+      <button class="btn btn-outline-dark" (click)=" mode = 'vertical' ">Nos meilleurs destinations</button>
+      <button class="btn btn-outline-dark" (click)=" mode = 'horizontal' ">les autres destinations</button>
+    </div>
+
+    <div [ngSwitch]=" mode ">
+
+      <ul class="list-unstyled" *ngSwitchCase=" 'vertical' ">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+      </ul>
+
+      <ul class="list-inline" *ngSwitchCase=" 'horizontal' ">
+        <li class="list-inline-item">Element 1</li>
+        <li class="list-inline-item">Element 2</li>
+        <li class="list-inline-item">Element 3</li>
+        <li class="list-inline-item">Element 4</li>
+      </ul>
+
+      <p *ngSwitchDefault class="text-black-50">Choisissez un mode d'affichage</p>
+
+    </div>
+  </article>
 </fieldset>

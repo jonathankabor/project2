@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolComponent implements OnInit {
 
+  mode: string;
   constructor() { }
 
   ngOnInit(): void {
